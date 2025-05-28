@@ -1,0 +1,16 @@
+{
+    "rust-analyzer.cargo.target": "wasm32-unknown-unknown",
+    "rust-analyzer.cargo.features": [
+        "csr"
+    ],
+    "rust-analyzer.rustfmt.overrideCommand": [
+        "leptosfmt",
+        "--stdin",
+        "--rustfmt"
+    ],
+    "rust-analyzer.procMacro.ignored": {
+        "leptos_macro": [
+            "component",
+        ],
+    }
+}

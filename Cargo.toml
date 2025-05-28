@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["database", "worker"]
+members = ["database", "frontend", "worker"]
 default-members = ["worker"]
 
 [workspace.dependencies]
