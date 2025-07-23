@@ -4,4 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-leptos = { version = "0.8.2", features = ["csr"] }
+leptos = { version = "0.8", features = ["csr"] }
+leptos_router = "0.8"
+# Not wasm compatible
+spacetimedb-sdk = "1.2"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.3", features = ["wasm_js"] }

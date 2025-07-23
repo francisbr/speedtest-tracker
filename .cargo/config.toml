@@ -1,2 +1,8 @@
 [target.wasm32-unknown-unknown]
-rustflags = ["--cfg", "erase_components"]
+rustflags = [
+    "--cfg",
+    "erase_components",
+    # Needed for spacetimedb-sdk
+    "--cfg",
+    "getrandom_backend=\"wasm_js\"",
+]
